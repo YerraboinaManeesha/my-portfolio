@@ -320,6 +320,7 @@
       flex-direction:column;padding:24px;gap:20px;transform:translateX(110%);transition:transform .3s ease;border-bottom-left-radius:14px;}
     .nav-links.open{transform:translateX(0);}
     .burger{display:block;}
+    .logo{font-size:0.92rem;}
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -332,7 +333,7 @@
 <canvas id="particle-canvas"></canvas>
 
 <nav>
-  <div class="logo"><span class="dot"></span>Maneesha<span class="mono" style="color:var(--muted);font-weight:400;">.dev</span></div>
+  <div class="logo"><span class="dot"></span>Maneesha Yerraboina</div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">Who I Am</a></li>
     <li><a href="#education">Education</a></li>
@@ -354,7 +355,7 @@
 <section id="hero">
   <div class="hero-flex">
   <div class="hero-inner">
-    <div class="eyebrow">MSc Computer Science · AI & Web Development</div>
+    <div class="eyebrow">MSc Computer Science · Software & Web Development</div>
     <h1>Hi, I'm <span>Yerraboina Maneesha</span></h1>
     <div class="role-line mono"><span id="typedRole"></span><span class="cursor">&nbsp;</span></div>
     <p class="hero-bio">I am an MSc Computer Science graduate with a strong passion for technology and continuous learning. I enjoy building practical, user-focused applications while exploring Artificial Intelligence, Web Development, and emerging technologies.</p>
@@ -388,7 +389,7 @@
     <div class="fact-card reveal">
       <h4>Quick Facts</h4>
       <div class="fact-row"><span>Location</span><span>Hyderabad, Telangana</span></div>
-      <div class="fact-row"><span>Focus</span><span>AI & Web Development</span></div>
+      <div class="fact-row"><span>Focus</span><span>Software & Web Development</span></div>
       <div class="fact-row"><span>Status</span><span>Fresher / Open to work</span></div>
       <div class="fact-row"><span>Email</span><span>yerraboinamanisha@gmail.com</span></div>
     </div>
@@ -425,7 +426,6 @@
       <p class="overview">My undergraduate studies provided a strong foundation in programming, database management, and web technologies. During this period, I built my core technical skills, developed logical thinking, and discovered my passion for software development and emerging technologies.</p>
       <div class="tag-row">
         <span class="tag">C</span>
-        <span class="tag">C++</span>
         <span class="tag">Java</span>
         <span class="tag">DBMS</span>
         <span class="tag">HTML</span>
@@ -447,7 +447,7 @@
       <span class="icon">💻</span>
       <h4>Programming Languages</h4>
       <div class="tag-row">
-        <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C</span><span class="tag">C++</span>
+        <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C</span>
       </div>
     </div>
     <div class="skill-card reveal">
@@ -475,7 +475,7 @@
       <span class="icon">🧰</span>
       <h4>Tools & Technologies</h4>
       <div class="tag-row">
-        <span class="tag">VS Code</span><span class="tag">Git (Basic)</span><span class="tag">GitHub</span><span class="tag">MS Office</span>
+        <span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">MS Office</span>
       </div>
     </div>
     <div class="skill-card reveal">
@@ -629,7 +629,7 @@
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
   /* ---- Typed role text ---- */
-  const roles = ["AI Enthusiast.", "Web Developer.", "Problem Solver.", "Lifelong Learner."];
+  const roles = ["Aspiring Software Developer.", "Web Development Enthusiast.", "Problem Solver.", "Detail-Oriented.", "Always Curious."];
   const typedEl = document.getElementById('typedRole');
   let roleIdx = 0, charIdx = 0, deleting = false;
   function typeLoop(){
